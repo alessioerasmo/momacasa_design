@@ -143,7 +143,49 @@ body::-webkit-scrollbar {
     background-size: 30%;
     background-position: 0px 30px;
     height: 300px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
 }
+
+
+.moma-dark-container > .card {
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+}
+.moma-dark-container > img {
+    height: 90%;
+    position: relative;
+    top: -5%;
+}
+
+.moma-dark-container > .card > .card-body > .card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    text-align: justify-all !important;
+}
+
+.moma-dark-container > .card > .card-body > .card-subtitle {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.moma-dark-container > .card > .card-body > .card-text {
+    
+font-weight: 300;
+font-size: smaller;
+}
+
+
+.moma-dark-container > .card > .card-body > * {
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
 
 .text-block {
     text-align: center;
