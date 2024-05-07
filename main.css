@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --color_1: #AA9C91;
+    --color_2: #F2CEA6;
+    --color_3: #dfb333;
+    --color_4: #dfd0bd;
+
+    --size_m: 30px;
+    --size_l: 60px;
+    --radius: 5px;
+}
+
+body > * {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--color_1);
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+ 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+#header {
+    display: flex;
+    justify-content: center;
+    border: 0;
+}
+
+#header > img {
+    width: 100%;
+    max-width: 400px;
+    padding: var(--size_m);
+}
+
+.line {
+    margin: 0;
+    height: 1px;
+    border: 0;
+    background-color: var(--color_2);
+    opacity: 100%;
+    z-index: 0;
+}
+
+.flower {
+    display: flex;
+    justify-content: center;
+}
+
+.flower > img {
+    width: 60px;
+    margin-top: -26px;
+    z-index: 1;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    word-wrap: normal;
+    text-align: center;
+    color: var(--color_2);
+}
+
+.landing-image {
+    background: url("images/HD-wallpaper-wonderful-sunset-beach-sunset-clouds-hill-sea.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    border: 1px solid var(--color_2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-image > .title {
+    text-align: center;
+    position: relative;
+    font-size: 65px;
+    font-weight: bold;
+    padding: 0 var(--size_l);
+    color: var(--color_1);
+}
+
+.landing-image > h5 {
+    margin-top: 200px;
+    position: relative;
+    top: 20px;
+    font-weight:  400;
+    text-align: center;
+    color: var(--color_3);
+   
+}
+
+.landing-image > .book-container {
+    backdrop-filter: blur(10px);
+    margin-top: 150px ;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    padding: 30px 20px;
+}
+
+.button-container {
+    width: 300px;
+    background-color: var(--color_3);
+    border: 0px;  
+    padding: 4px; 
+}
+
+.button-container > a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    color: white !important;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700;
+    font-size: x-large !important;
+    border-radius: 10px 0px 10px 0px;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.intro-text{
+    color: var(--color_3);
+    padding: 50px 15%;
+    text-align: center;
+    font-size: large;
+}
+
+.moma-dark-container{
+    width: 100%;
+    background-color: var(--color_4);
+    background-image: url("images/flower2.svg");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 0px 30px;
+    height: 300px;
+}
+
+.text-block {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.gallery > .frame {
+    width: 33%;
+}
+
+.gallery > .frame > img {
+    width: 100%;
+    height: 400px;
+    padding: calc(var(--size_m) / 2);
+    object-fit: cover;
+
+    transition: 0.4s ease;
+}
+
+
+.gallery > .frame > img:hover {
+    
+    padding: 0;
+}
+
+.fullscreen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.fullscreen img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (max-width: 768px) {
+    .gallery > .frame {
+        width: 100%;
+    }
+
+    .gallery > .frame > img {
+    height: 600px;
+    }
+
+    .fullscreen {
+        display: none!important;
+    }
+}
+
+#footer {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#footer > img {
+    margin: 0 auto 200px;
+    
+            display: block;
+    max-width: 500px;
+    
+    padding: var(--size_m);
+}
+
+.mail {
+    display: inline;
+    margin-top: -80px;
+    margin-bottom: 80px;
+    text-align: center;
+    color: var(--color_1);
+}
+
