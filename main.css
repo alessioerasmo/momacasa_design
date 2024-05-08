@@ -238,6 +238,58 @@ font-size: smaller;
     display: inline !important;
 }
 
+/* SERVICES */
+.container-services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+
+}
+
+.container-services > h1,h2,h3,h4,h5,h6 {
+    width: 100%;
+}
+
+.container-services > * {
+    text-align: center;
+}
+
+.container-services > h1 {
+color: var(--color_1);
+font-family: 'Playfair Display', serif;
+font-weight: 700;
+margin-top: 0;
+margin-bottom: 60px;
+}
+
+.container-services > h6 {
+    text-transform: uppercase;
+    color: var(--color_3);
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+
+
+.service-element > h6 {
+    font-family: 'Playfair Display', serif;
+    color: var(--color_3);
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.service-element > .circle {
+    background-image: url("images/Logomarchio Colore.svg");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120px;
+    width: 120px;
+    border: 1px solid var(--color_3);
+    border-radius: 50%;
+}
+
+
 .text-block {
     text-align: center;
     width: 100%;
