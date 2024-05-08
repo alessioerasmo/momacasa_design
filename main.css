@@ -290,6 +290,86 @@ margin-bottom: 60px;
 }
 
 
+.end-container{
+    margin: 130px 0;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end-container > img {
+    height: 350px;
+    max-width: 45%;
+}
+
+.end-container > .card{
+    border: 0px;
+}
+
+.end-container > .card > .card-body{
+    text-align: right;
+}
+
+.end-container > .card > .card-body > .card-title{
+    font-family: 'Playfair Display', serif;
+}
+
+.end-container > .card > .card-body > .card-subtitle{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.end-container > .card > .card-body > div{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .text-block {
     text-align: center;
     width: 100%;
