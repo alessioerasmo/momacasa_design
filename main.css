@@ -184,7 +184,9 @@ font-size: smaller;
     font-family: 'Montserrat', sans-serif;
 }
 
-
+.carousel-control-custom{
+    border: 2px solid red;
+}
 
 
 .text-block {
