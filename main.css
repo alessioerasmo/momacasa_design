@@ -135,59 +135,108 @@ body::-webkit-scrollbar {
     font-size: large;
 }
 
-.moma-dark-container{
+
+.moma-container{
     width: 100%;
-    background-color: var(--color_4);
-    background-image: url("images/flower2.svg");
-    background-repeat: no-repeat;
-    background-size: 30%;
-    background-position: 0px 30px;
-    height: 300px;
     display: flex;
     justify-content:center ;
     align-items: center;
 }
 
 
-.moma-dark-container > .card {
-    color: white;
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px;
-}
-.moma-dark-container > img {
-    height: 90%;
-    position: relative;
-    top: -5%;
+.moma-dark-container{
+    height: 400px;
+    background-color: var(--color_4);
+    background-image: url("images/flower2.svg");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 0px 30px;
 }
 
-.moma-dark-container > .card > .card-body > .card-title {
+.moma-light-container{
+    align-items: flex-end !important;
+    position: relative;
+    top: -50px;
+}
+
+
+.moma-container > .card {
+    border: 0px;
+}
+
+.moma-dark-container > .card {
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0);
+}
+.moma-container > img {
+    height: 80%;
+    position: relative;
+    top: -10%;
+}
+
+.moma-container > .card > .card-body > .card-title {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
     text-align: justify-all !important;
 }
 
-.moma-dark-container > .card > .card-body > .card-subtitle {
+.moma-container > .card > .card-body > .card-subtitle {
     font-weight: 300;
     text-transform: uppercase;
     font-size: small;
 }
 
-.moma-dark-container > .card > .card-body > .card-text {
+.moma-container > .card > .card-body > .card-text {
     
 font-weight: 300;
 font-size: smaller;
 }
 
 
-.moma-dark-container > .card > .card-body > * {
+.moma-container > .card > .card-body > * {
     text-align: right;
     font-family: 'Montserrat', sans-serif;
 }
 
-.carousel-control-custom{
-    border: 2px solid red;
+.moma-light-container > .card > .card-body > * {
+    text-align: left !important;
+}
+.moma-light-container > .card > .card-body > .card-title {
+    color: var(--color_3) !important;
 }
 
+.moma-light-container > .card > .card-body > .card-title2 {
+    color: var(--color_1) !important;
+}
+/* CONTAINER'S CAROUSEL */
+
+.moma-container > .carousel {
+    width: 500px;
+}
+
+
+.carousel-item > img{
+    width: 100% !important;
+    height: 350px;
+    
+}
+
+.carousel-outer-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-outer-control{
+    text-decoration: none;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.carousel-outer-control > svg{
+    color: var(--color_3) !important;
+    display: inline !important;
+}
 
 .text-block {
     text-align: center;
