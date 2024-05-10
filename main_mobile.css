@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+    .gallery > .frame {
+        width: 100%;
+    }
+
+    .gallery > .frame > img {
+    height: 600px;
+    }
+
+    .fullscreen {
+        display: none!important;
+    }
+
+
+    .moma-dark-container{
+        flex-direction: column-reverse;
+        
+    }
+
+    .moma-dark-container > img{
+        width: 100%;
+        position: relative;
+        top: 0px;
+    }
+
+    .moma-light-container {
+        display: none;
+    }
+    .moma-dark-container > .card {
+        padding: 20px 0px;
+    }
+
+    .moma-dark-container > .card > .card-body > * {
+        text-align:left;
+    }
+    
+}
