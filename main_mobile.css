@@ -23,9 +23,7 @@
         top: 0px;
     }
 
-    .moma-light-container {
-        display: none;
-    }
+    
     .moma-dark-container > .card {
         padding: 20px 0px;
     }
@@ -34,4 +32,18 @@
         text-align:left;
     }
     
+
+    .moma-light-container {
+        flex-direction: column-reverse;
+        top: 0px;
+        padding: 40px 0px;
+    }
+
+
+
+    /* INFO CENTERED */
+    #info > .column {
+        margin: 20px 30px;
+        
+    }
 }
