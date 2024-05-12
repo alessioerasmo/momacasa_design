@@ -1,4 +1,10 @@
 @media (max-width: 768px) {
+
+    .landing-image > .title {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
     .gallery > .frame {
         width: 100%;
     }
@@ -39,7 +45,25 @@
         padding: 40px 0px;
     }
 
-
+    /* END CONTAINER */
+    .end-container > img {
+        height: auto;
+        width: 100%;
+        max-width: none;
+    }
+    .end-container > .card > .card-body{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .end-container > .card > .card-body > *{
+        text-align: center;
+    }
+    .end-container > .card > .card-body > div{
+        float: none;
+    }
 
     /* INFO CENTERED */
     #info > .column {
