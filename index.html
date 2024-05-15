@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="main_mobile.css">
-    
+
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
@@ -21,32 +21,35 @@
 <body> 
 
     
-      <nav class="navbar">
-        <div id="header" class="container-fluid" style="display: flex; flex-direction: column; justify-content: center; text-align: center;">
+    <!-- START HEADER -->
+    
+      <nav id="header" class="navbar p-2">
+        
+            <div class="languages">
+                <p class="actual_page">IT</p>
+                <p>EN</p>
+            </div>
+            
             <img src="images/Logo_orizzontale.svg" style="margin:auto;" alt="Logo Moma Casa">
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 
             <span class="navbar-toggler-icon"></span>
           </button>
-        </div>
+
       </nav>
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class=" p-4">
-          <h5 class="text-white h4">Collapsed content</h5>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
+      <div class="collapse" id="navbarMenu">
+        <div class="p-4">
+            <ul>
+                <li><a href="index.html" class="actual_page">Home</a></li>
+                <li><a href="index.html">Camere</a></li>
+                <li><a href="index.html">Gallery</a></li>
+                <li><a href="index.html">Contatti</a></li>
+            </ul>
         </div>
       </div>
 
-    <!-- START HEADER 
-    <div id="header" style="display: flex; flex-direction: column; justify-content: center; text-align: center;">
-        <img src="images/Logo_orizzontale.svg" style="margin:auto;" alt="Logo Moma Casa">
-        
-    </div>
-    
-    <hr class="line"> 
-
-     END HEADER -->
+    <!-- END HEADER -->
     
 
     <!-- START BODY -->
@@ -96,7 +99,7 @@
               </div>
             </div>
         </div>
-        <div class="card m-1" style="width: 25rem;">
+        <div class="card m-1">
             <div class="card-body">
             <h6 class="card-subtitle">Scopri il benessere delle nostre camere</h6>
               <h1 class="card-title">Suite d'autore</h1>

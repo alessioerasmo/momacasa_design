@@ -17,29 +17,83 @@ body > * {
     color: var(--color_1);
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    
 }
- 
+body {
+    
+max-width: 100%;
+
+}
 body::-webkit-scrollbar {
     display: none;
 }
 
+/* START HEADER */
 
 #header {
+    padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center !important;
     border: 0;
 }
 
+#header > * {
+}
+
+#header > .languages  {
+}
+
+
+#header > .languages > *{
+    display: inline-block;
+    font-weight: 300;
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+
 #header > img {
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
+    max-width: 70%;
     padding: var(--size_m);
 }
 
+
 #header > button{
-    position: absolute;
-    right: 20px;
+   
 }
+
+#header > button{
+    border: 0px !important;
+}
+
+#navbarMenu {
+}
+
+#navbarMenu > div > ul  {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#navbarMenu > div > ul > li {
+    text-align: center;
+    list-style-type: none;
+    margin: 20px;
+}
+
+.actual_page {
+    border-bottom: 2px solid var(--color_3);
+}
+
+#navbarMenu > div > ul > li > a {
+    text-decoration: none;
+    color: var(--color_1);
+    font-size: 20px;
+}
+/* END HEADER */
+
 
 .line {
     margin: 0;
@@ -166,6 +220,7 @@ body::-webkit-scrollbar {
 
 
 .moma-container > .card {
+    width: 25rem;
     border: 0px;
 }
 
