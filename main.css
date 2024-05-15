@@ -36,6 +36,11 @@ body::-webkit-scrollbar {
     padding: var(--size_m);
 }
 
+#header > button{
+    position: absolute;
+    right: 20px;
+}
+
 .line {
     margin: 0;
     height: 1px;
