@@ -1,0 +1,87 @@
+.display-rooms {
+    width: 100%;
+    display: flex;  
+    flex-wrap: wrap;
+}
+
+.stanza * {
+    
+    text-decoration: none!important;
+}
+
+.stanza > a >img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.stanza > a > p {
+    color: var(--color_1);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.room-img-over {
+    position: relative;
+    z-index: 2;
+    transition: ease-in-out 0.3s;
+}
+
+.room-img-under {
+    position: relative;
+    top: -250px;
+    z-index: 1;
+}
+
+.stanza:hover  .room-img-over {
+    opacity: 0;
+}
+
+.stanza > a > .infos > h2 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: var(--color_2);
+    width: fit-content;
+    margin-right: 20px;
+    text-wrap: nowrap;
+}
+
+
+.infos {
+    display: flex;
+    margin-top: -240px;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.infos  img {
+    height: 16px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+
+.infos  p {
+    margin-right: 20px;
+    margin-bottom: 0px;
+    color: var(--color_1);
+}
+
+.icons {
+    display: flex;
+    padding-top: 10px;
+}
+
+.stanza.depandance > a > img {
+    height: 400px;
+}
+
+.depandance .room-img-under {
+    top: -400px;
+}
+
+.depandance .infos {
+    display: flex;
+    margin-top: -390px;
+    align-items: end;
+    flex-wrap: wrap;
+}

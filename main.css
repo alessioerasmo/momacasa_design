@@ -3,7 +3,7 @@
 :root {
     --color_1: #AA9C91;
     --color_2: #F2CEA6;
-    --color_3: #dfb333;
+    --color_3: #F2CEA6;
     --color_4: #dfd0bd;
 
     --size_m: 30px;
@@ -28,6 +28,10 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.cursive {
+    font-family: 'Playfair Display', serif;
+}
+
 /* START HEADER */
 
 #header {
@@ -36,7 +40,11 @@ body::-webkit-scrollbar {
     flex-direction: row;
     align-items: center;
     justify-content: center !important;
-    border: 0;
+}
+
+.header-block {
+
+    border-bottom: 1px solid var(--color_3);
 }
 
 #header > * {
@@ -128,7 +136,8 @@ body::-webkit-scrollbar {
     background-size: cover;
     background-position: center;
     margin: 0;
-    border: 1px solid var(--color_2);
+    border-top: 1px solid var(--color_2);
+    border-bottom: 1px solid var(--color_2);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -262,11 +271,15 @@ font-size: smaller;
     text-align: left !important;
 }
 .moma-light-container > .card > .card-body > .card-title {
-    color: var(--color_3) !important;
+    color: var(--color_1) !important;
 }
 
 .moma-light-container > .card > .card-body > .card-title2 {
-    color: var(--color_1) !important;
+    color: var(--color_3) !important;
+}
+
+.moma-light-container > .card > .card-body > .card-subtitle {
+    color: var(--color_3) !important;
 }
 /* CONTAINER'S CAROUSEL */
 
