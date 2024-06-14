@@ -1,0 +1,87 @@
+.room-landing-img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    opacity: 80%;
+}
+
+.container-services-room {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-services-room .service-element {
+    margin: 10px 25px;
+}
+
+.container-services-room .circle{
+    height: 80px;
+    width: 80px;
+}
+
+.room-gallery img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.suggested-room-img-over{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    transition: ease-in-out 0.3s;
+}
+
+.suggested-room-img-under {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    top:-300px;
+    margin-top: 0px;
+    margin-bottom: -276px;
+}
+
+.suggested-room-img-over:hover {
+    opacity: 0%;
+}
+
+.suggested-rooms {
+    margin-bottom: 400px;
+}
+
+.icons {
+    margin-top: -20px;
+}
+
+.icons  img {
+    height: 16px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+
+.icons  p {
+    margin-right: 20px;
+    margin-bottom: 0px;
+    color: var(--color_1);
+}
+
+.moma-dark-container.suggested-rooms {
+    height: 300px;
+}
+
+.moma-dark-container.suggested-rooms > .container > h6,
+.moma-dark-container.suggested-rooms > .container > h1 {
+    color: white;
+    text-align: center;
+}
+
+.room p, .room a {
+    text-decoration: none;
+    color: var(--color_1);
+}
+
