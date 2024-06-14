@@ -85,3 +85,23 @@
     color: var(--color_1);
 }
 
+
+.circle.air {
+    background-image: url("images/air.svg");
+}
+
+.circle.tv {
+    background-image: url("images/tv.svg");
+}
+
+.circle.phon {
+    background-image: url("images/phon.svg");
+}
+
+.circle.wifi {
+    background-image: url("images/wifi.svg");
+}
+
+.circle.clean {
+    background-image: url("images/clean.svg");
+}

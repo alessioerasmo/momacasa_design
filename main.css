@@ -178,7 +178,7 @@ body::-webkit-scrollbar {
     padding: 4px; 
 }
 
-.button-container > a {
+.button-container > a, .button-container > button {
     display: block;
     text-align: center;
     text-decoration: none;
@@ -195,6 +195,10 @@ body::-webkit-scrollbar {
     user-select: none;
 }
 
+.button-container:hover > button, .button-container:hover  {
+    background-color: var(--color_4);
+    border-color: white;
+}
 
 .intro-text{
     color: var(--color_3);
@@ -342,7 +346,12 @@ margin-bottom: 60px;
     margin-bottom: 0;
 }
 
-
+.service-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+}
 
 .service-element > h6 {
     font-family: 'Playfair Display', serif;
